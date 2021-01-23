@@ -5,4 +5,8 @@ export default class HeaderComponent extends LightningElement {
     getToHome() {
         routeMeTo('home', {}, {});
     }
+
+    mywork(){
+        routeMeTo('mywork', {}, {});
+    }
 }
