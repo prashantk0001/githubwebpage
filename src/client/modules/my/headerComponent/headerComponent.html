@@ -1,0 +1,58 @@
+<template>
+    <header class="slds-global-header_container customdarkbackground">
+        <div
+            class="slds-global-header customdarkbackground"
+            style="height: fit-content"
+        >
+            <div style="margin-left: 10%; margin-right: 10%">
+                <c-layout horizontal-align="spread" multiple-rows>
+                    <c-layout-item
+                        size="12"
+                        large-device-size="6"
+                        medium-device-size="6"
+                        small-device-size="12"
+                    >
+                        <div class="center">
+                            <span style="font-weight: bold; line-height: 2rem">
+                                <a onclick={getToHome} class="profilelink"
+                                    >PRASHANT KASHYAP</a
+                                >
+                            </span>
+                        </div>
+                    </c-layout-item>
+
+                    <c-layout-item
+                        size="12"
+                        large-device-size="6"
+                        medium-device-size="6"
+                        small-device-size="12"
+                    >
+                        <div class="center">
+                            <div style="color: #006dcc; line-height: 2rem">
+                                <span class="away">
+                                    <a onclick={getToHome}>about</a>
+                                </span>
+                                <span class="away">
+                                    <a href="https://sfdcstan.wordpress.com/"
+                                        >blog</a
+                                    >
+                                </span>
+                                <span class="away">
+                                    <a href="https://github.com/prashantk0001"
+                                        >github</a
+                                    >
+                                </span>
+                                <span class="away">
+                                    <a
+                                        href="https://www.linkedin.com/in/kashyap-prashant/"
+                                        >linkedIn</a
+                                    >
+                                </span>
+                            </div>
+                        </div>
+                    </c-layout-item>
+                </c-layout>
+            </div>
+        </div>
+    </header>
+</template>
