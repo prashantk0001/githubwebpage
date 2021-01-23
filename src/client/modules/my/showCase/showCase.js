@@ -6,4 +6,6 @@ export default class Profile extends LightningElement {
     @api author;
     @api description;
     @api url;
+    @api demo;
+
 }

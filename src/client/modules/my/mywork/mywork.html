@@ -5,14 +5,14 @@
 
         <c-layout-item size="10" large-device-size="8" medium-device-size="8" small-device-size="10">
             <article class="slds-card tds-card slds-p-top_large customverylightbackground"
-                style="margin-top: 8rem; margin-bottom: 3rem">
+                style="margin-top: 7rem; margin-bottom: 3rem">
                 <div class="slds-card__body slds-card__body_inner">
-                    <div class="slds-text-heading_medium slds-grid_vertical-align-center slds-m-bottom_xxx-small slds-truncate" style="margin:1rem;">
-                        <h3>Apart from being busy full time at work, I have a few projects that I've been working on:
+                    <div class="slds-text-heading_medium slds-grid_vertical-align-center slds-m-bottom_xxx-small" style="margin:1rem;">
+                        <h3>Apart from being busy full time at work, I have a few projects that I've been working on
                         </h3>
                     </div>
                     <template for:each={projects} for:item="project">
-                        <my-show-case key={project.title} title={project.title} author={project.author} description={project.description} url={project.url}></my-show-case>
+                        <my-show-case key={project.title} title={project.title} author={project.author} description={project.description} url={project.url} demo={project.demo}></my-show-case>
                     </template>
                 </div>
             </article>

@@ -1,7 +1,7 @@
 <template>
     <div style="margin:1rem; padding:1rem; border: solid 1px #d8d5d5; border-radius: 3px; display:fit-content;">
         <article class="slds-tile">
-            <h3 class="slds-text-heading_medium slds-grid_vertical-align-center slds-m-bottom_xxx-small slds-truncate"
+            <h3 class="slds-text-heading_small slds-grid_vertical-align-center slds-m-bottom_xxx-small slds-truncate"
                 title={title}>
                 <a href={url} target="_blank">{title}</a>
             </h3>
@@ -9,28 +9,37 @@
             <div class="slds-tile__detail">
                 <div class="slds-wrap" style="padding:0.5rem;">
                     <c-layout horizontal-align="spread" multiple-rows>
+
                         <c-layout-item size="12" large-device-size="2" medium-device-size="2" small-device-size="3">
-                            <span class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">
+                            <span class="slds-item_label slds-text-color_weak slds-text-title_bold" title="Second Label">
+                                Description:
+                            </span>
+                        </c-layout-item>
+                        <c-layout-item size="12" large-device-size="10" medium-device-size="10" small-device-size="9">
+                            <p class="slds-item_detail " title="Description">
+                                {description}
+                            </p> 
+                        </c-layout-item>
+                        
+                        <c-layout-item size="12" large-device-size="2" medium-device-size="2" small-device-size="3">
+                            <span class="slds-item_label slds-text-color_weak slds-text-title_bold" title="First Label">
                                 Author:
                             </span>
                         </c-layout-item>
                         <c-layout-item size="12" large-device-size="10" medium-device-size="10" small-device-size="9">
-                            <span class="slds-item_detail slds-truncate"
+                            <span class="slds-item_detail"
                                 title="Description for first label">
                                 {author}
                             </span>
                         </c-layout-item>
 
-                        <c-layout-item size="12" large-device-size="2" medium-device-size="2" small-device-size="3">
-                            <span class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">
-                                Description:
-                            </span>
-                        </c-layout-item>
-                        <c-layout-item size="12" large-device-size="10" medium-device-size="10" small-device-size="9">
-                            <p class="slds-item_detail " title="Description for second label">
-                                {description}
-                            </p>
-                        </c-layout-item>
+                        <template if:true={demo}>
+                            <c-layout-item size="12" large-device-size="2" medium-device-size="2" small-device-size="3">
+                                <span class="slds-item_label slds-text-color_weak slds-text-title_bold" title="Second Label">
+                                    Try it <a href={demo} target="_blank">here</a>
+                                </span>
+                            </c-layout-item>
+                        </template>
                     </c-layout>
 
 

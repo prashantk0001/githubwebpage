@@ -2,15 +2,16 @@
     <div>
         <my-header-component></my-header-component>
     </div>
-    <my-router-module>
-        <my-router-module register-page="home" is-default="true">
-            <my-profile></my-profile>
+    <div style="margin:1rem">
+        <my-router-module>
+            <my-router-module register-page="home" is-default="true">
+                <my-profile></my-profile>
+            </my-router-module>
+            <my-router-module register-page="mywork">
+                <my-mywork></my-mywork>
+            </my-router-module>
         </my-router-module>
-        <my-router-module register-page="mywork">
-            <my-mywork></my-mywork>
-        </my-router-module>
-    </my-router-module>
-
+    </div>
     <footer style="z-index: 10000 !important;" class="slds-docked-form-footer">
         <div title="Built with Lightning Web Components">I Built this with Lightning Web Components OSS <a
                 href="https://lwc.dev/"><img src="./resources/favicon.ico" style="height: 25px;"></img></a></div>

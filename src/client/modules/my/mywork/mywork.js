@@ -39,8 +39,9 @@ export default class Profile extends LightningElement {
         {
             author: 'Prashant Kashyap',
             title : 'Salesforce-Test-Utility',
-            description: 'Chrome extension buil;t to support productivity by rpoviding easy access to Apex testing utilities.',
-            url: 'https://github.com/prashantk0001/Salesforce-Test-Utility'
+            description: 'Chrome extension built to support productivity by providing easy access to Apex testing utilities.',
+            url: 'https://github.com/prashantk0001/Salesforce-Test-Utility',
+            demo : 'https://chrome.google.com/webstore/detail/salesforce-test-class-uti/dnihcohcnpedkecefajbjkajnklppbjn'
         }
     ]
 }
