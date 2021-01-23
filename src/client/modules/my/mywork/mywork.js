@@ -10,7 +10,7 @@ import { LightningElement, track } from 'lwc';
 }
 */
 
-export default class Profile extends LightningElement {
+export default class MyWork extends LightningElement {
     @track projects = [
         {
             author: 'Prashant Kashyap',
@@ -28,7 +28,8 @@ export default class Profile extends LightningElement {
             author: 'Prashant Kashyap',
             title : 'lwc-switch-expressions',
             description: 'Switch Case implementation for LWC, closest reusable alternative for rendering multiple components dynamically!',
-            url: 'https://github.com/prashantk0001/lwc-switch-expressions'
+            url: 'https://github.com/prashantk0001/lwc-switch-expressions',
+            demo: 'https://webcomponents.dev/edit/LpdGP2Mn9t2Id2JYu22a?sv=1'
         },
         {
             author: 'Prashant Kashyap',
